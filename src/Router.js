@@ -4,6 +4,7 @@ const TERMINAL = Symbol('terminal')
 
 export default class Router extends Middleware {
 	constructor() {
+		super()
 		this._tree = {}
 	}
 	get(...args) {

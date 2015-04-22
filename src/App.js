@@ -3,6 +3,7 @@ import Middleware from './Middleware'
 export default class App extends Middleware {
 
 	constructor() {
+		super()
 		this.middlewareList = []
 	}
 
