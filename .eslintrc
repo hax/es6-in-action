@@ -1,4 +1,33 @@
 ---
+  ecmaFeatures:
+    modules: true
+    classes: true
+    blockBindings: true
+    arrowFunctions: true
+    spread: true
+    restParams: true
+    defaultParams: false
+    destructuring: false
+    forOf: true
+    generators: false
+
+    templateStrings: false
+
+    binaryLiterals: false
+    octalLiterals: false
+    unicodeCodePointEscapes: false
+    regexUFlag: false
+    regexYFlag: false
+
+
+    superInFunctions: false
+    objectLiteralComputedProperties: false
+    objectLiteralShorthandMethods: false
+    objectLiteralShorthandProperties: false
+
+    objectLiteralDuplicateProperties: false
+    globalReturn: false
+
   rules:
     semi: never
     quotes: single avoid-escape

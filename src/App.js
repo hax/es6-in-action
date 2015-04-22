@@ -11,7 +11,7 @@ export default class App extends Middleware {
 		this.middlewareList.push(middleware)
 	}
 
-	handle(request, response) {
+	handle(req, res) {
 
 		let index = 0
 
@@ -21,7 +21,7 @@ export default class App extends Middleware {
 			}
 		}
 
-		next(request, response)
+		next(req, res)
 
 	}
 }

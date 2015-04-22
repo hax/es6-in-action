@@ -1,4 +1,3 @@
-
 import Middleware from './Middleware'
 
 import getRawBody from 'raw-body'
@@ -20,5 +19,5 @@ export default class BodyParser extends Middleware {
 			next(req, res)
 		})
 	}
-	
+
 }
