@@ -29,7 +29,7 @@ function es6task(name, transpiler, options) {
 	})
 }
 
-es6task('babel', babel/*, {experimental: true}*/)
+es6task('babel', babel/*, {stage: 0}*/)
 es6task('traceur', traceur/*, {module: 'instantiate'}*/)
 //es6task('jstransform', jstransform)
 es6task('jsdc', jsdc)
@@ -46,7 +46,7 @@ es6tasks.unshift('clean')
 gulp.task('client', function () {
 	gulp.src(es6src_client).
 		pipe(plumber()).
-		pipe(babel()).
+		pipe(babel({optional: ['es7.asyncFunctions']})).
 		pipe(gulp.dest('public'))
 })
 

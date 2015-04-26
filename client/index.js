@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 	document.getElementById('myForm').onsubmit = (evt) => {
-		let f = evt.target
-		test(f)
+		test(evt.target)
 		return false
-
 	}
 
 })
@@ -23,16 +21,14 @@ function http(method, url, {type, data}) {
 }
 
 
-/*
 async function test(f) {
-	let result = await http(f.method, f.action, {data: f, type: 'json'})
+	let result = await http(f.method, f.action, {data: new FormData(f), type: 'json'})
 	alert('result: ' + result.value)
 }
-*/
 
-function test(f) {
-	let result = http(f.method, f.action, {data: new FormData(f), type: 'json'})
-	result.then((result) => {
-		alert('result: ' + result.value)
-	})
-}
+// function test(f) {
+// 	let result = http(f.method, f.action, {data: new FormData(f), type: 'json'})
+// 	result.then((result) => {
+// 		alert('result: ' + result.value)
+// 	})
+// }
