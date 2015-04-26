@@ -13,7 +13,7 @@
     "del": "^1.1.1",
     "es6now": "^0.8.14",
     "gulp": "^3.8.11",
-    "gulp-babel": "^4.0.0",
+    "gulp-babel": "^5.1.0",
     "gulp-concat": "^2.5.2",
     "gulp-develop-server": "^0.4.1",
     "gulp-es6-transpiler": "^1.0.1",
@@ -23,9 +23,11 @@
     "gulp-plumber": "^1.0.0",
     "gulp-sourcemaps": "^1.5.0",
     "gulp-traceur": "^0.17.0",
-    "gulp-util": "^3.0.4"
+    "gulp-util": "^3.0.4",
+    "regenerator": "^0.8.22"
   },
   "dependencies": {
+    "babel-runtime": "^5.1.11",
     "es6-shim": "^0.27.1",
     "media-typer": "^0.3.0",
     "raw-body": "^1.3.3"
